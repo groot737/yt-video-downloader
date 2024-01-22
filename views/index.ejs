@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube video downloader</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Youtube Video Downloader</h1>
+    
+    <form id="downloadForm" action="/download" method="post">
+        <label for="videoUrl">Video URL:</label>
+        <input type="text" id="videoUrl" name="url" required>
+
+        <label for="quality">Select Format:</label>
+        <select  id="quality" name="type">
+            <option value="mp4">MP4</option>
+            <option value="mp3">MP3</option>
+        </select>
+
+        <button type="submit">Download</button>
+    </form>
+
+</body>
+</html>
